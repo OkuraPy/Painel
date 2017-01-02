@@ -1,0 +1,13 @@
+<?php
+error_reporting(0);
+$host = "localhost";
+$usuario = "admin_projeto";
+$senha = "ext12561244";
+$bd = "admin_projeto";
+
+$mysqli = new mysqli($host, $usuario, $senha, $bd);
+
+if($mysqli->connect_errno)
+	echo "Falha na conexão: (".$mysqli->connect_errno.") ".$mysqli->connect_error;
+
+?>
